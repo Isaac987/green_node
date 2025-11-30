@@ -1,5 +1,10 @@
 import { prisma } from "@/lib/prisma";
 
+/**
+ * Seeds the database with a predefined list of plant names, creating any missing records and logging progress.
+ *
+ * Existing plant records with the same names are left unchanged; new records are created idempotently.
+ */
 async function main() {
   const plants = [
     { name: "Monstera" },
