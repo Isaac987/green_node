@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "prettier-eslint --list-different \"**/*.js\" \"**/*.ts\" \"**/*.tsx\"",
+    "format": "prettier-eslint --write --list-different \"**/*.js\" \"**/*.ts\" \"**/*.tsx\""
   },
   "dependencies": {
     "next": "16.0.6",
