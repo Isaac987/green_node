@@ -7,7 +7,7 @@ import { ThemeToggle } from "@/components/theme/theme-toggle";
 
 export default function TopNavigation() {
   return (
-    <header className="h-16 flex justify-between items-center px-4 md:px-8">
+    <header className="h-16 flex justify-between items-center border-b px-4 md:px-8">
       <Link className="text-2xl font-medium" href="/">
         <span className="text-primary">Green</span>Node
       </Link>
